@@ -1,6 +1,7 @@
 .inline-block{
-    display: inline-block;
+    display: flex;
     vertical-align: top;
+    flex-direction: row;
 }
 
 .logo{
@@ -18,11 +19,18 @@ nav{
 }
 
 ul{
-    width: 50%;
+    font: 3em "Jomhuria", serif;
+    font-weight: 400;
     margin-left: auto;
     padding: 8px;
-    display: inline-block;
+    display: flex;
     vertical-align: top;
+    flex-direction: row;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
 }
 
 img{
@@ -39,23 +47,25 @@ img{
     margin: 0 auto;
 }
 
-footer{
+.footer{
     background-color: #373738;
+    flex-direction: column;
 }
 
 .flexContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 .item1{
     grid-area: myArea;
+    grid-row: 1fr 1fr 1fr 1fr;
 }
 .workGrid{
     display: grid;
     grid-template-areas: 'myArea myArea myArea myArea';
-    grid-template-rows: 50% 50%;
 }
+
 
 @media only screen and (max-width:600){
     .flexContainer{
