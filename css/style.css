@@ -66,6 +66,9 @@ img{
     grid-template-areas: 'myArea myArea myArea myArea';
 }
 
+.row{
+    flex-direction: row;
+}
 
 @media only screen and (max-width:600){
     .flexContainer{
